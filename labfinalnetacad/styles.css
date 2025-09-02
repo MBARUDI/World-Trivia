@@ -1,0 +1,231 @@
+/* Estilos Globais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+    text-decoration: underline;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #0654b3;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Seção de Curiosidades */
+#curiosidades .trivia-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#curiosidades .trivia-item img {
+    width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+/* Seção de Categorias */
+#categorias ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#categorias li {
+    margin: 10px;
+}
+
+#categorias a {
+    color: #0654b3;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 1px solid #0654b3;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#categorias a:hover,
+#categorias a:focus {
+    background-color: #0654b3;
+    color: white;
+    text-decoration: none;
+}
+
+/* Seção de Pontuações */
+#pontuacoes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+#pontuacoes th,
+#pontuacoes td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#pontuacoes th {
+    background-color: #333;
+    color: white;
+}
+
+#pontuacoes tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Seção de Formulário de Contato */
+#contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contato label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#contato input,
+#contato textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contato button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #0654b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#contato button:hover,
+#contato button:focus {
+    background-color: #043f88;
+}
+
+/* Seção de Inscrição */
+#inscrever-se {
+    text-align: center;
+}
+
+#inscrever-se button {
+    padding: 15px 30px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: pulse 2s infinite;
+    transition: background-color 0.3s;
+}
+
+#inscrever-se button:hover,
+#inscrever-se button:focus {
+    background-color: #d35400;
+}
+
+/* Animação do Botão */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Design Responsivo */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #curiosidades .trivia-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #curiosidades .trivia-item img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

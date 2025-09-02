@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#pontuacoes">Pontuações</a></li>
+                <li><a href="#inscrever-se">Inscrever-se</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Mundo do World Trivia!</h1>
+            <p>Seja bem-vindo à sua fonte definitiva de curiosidades e conhecimento. Explore o mundo, desvende fatos incríveis e teste seus conhecimentos com nosso jogo de perguntas e respostas. De história a ciência, de arte a geografia, temos categorias para todos os gostos. Prepare-se para se surpreender e desafiar seus amigos!</p>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Curiosidades Incríveis</h2>
+            <div class="trivia-item">
+                <img src="https://images.unsplash.com/photo-1549488346-d24c8770287e?q=80&w=200&auto=format&fit=crop" alt="Imagem de uma estrela-do-mar em um recife">
+                <div>
+                    <h3>Estrelas-do-mar não são peixes.</h3>
+                    <p>Apesar do nome, as estrelas-do-mar não são peixes. Elas são equinodermos, que são parentes próximos de ouriços e pepinos-do-mar.</p>
+                </div>
+            </div>
+            <div class="trivia-item">
+                <img src="https://images.unsplash.com/photo-1579737976694-de9721750058?q=80&w=200&auto=format&fit=crop" alt="Pirâmides do Egito e dromedário">
+                <div>
+                    <h3>O Egito tem a maior população de dromedários do mundo.</h3>
+                    <p>O Egito abriga cerca de 4 milhões de dromedários, superando qualquer outro país do mundo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias">
+            <h2>Categorias</h2>
+            <p>Explore nossas diversas categorias de curiosidades:</p>
+            <ul>
+                <li><a href="#" aria-label="Curiosidades sobre História">História</a></li>
+                <li><a href="#" aria-label="Curiosidades sobre Ciência">Ciência</a></li>
+                <li><a href="#" aria-label="Curiosidades sobre Geografia">Geografia</a></li>
+                <li><a href="#" aria-label="Curiosidades sobre Arte">Arte</a></li>
+            </ul>
+        </section>
+
+        <section id="pontuacoes">
+            <h2>Maiores Pontuações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Classificação</th>
+                        <th>Nome</th>
+                        <th>Pontuação</th>
+                        <th>País</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ana Souza</td>
+                        <td>5000</td>
+                        <td>Brasil</td>
+                        <td>História</td>
+                        <td>20/09/2025</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>John Doe</td>
+                        <td>4800</td>
+                        <td>EUA</td>
+                        <td>Ciência</td>
+                        <td>19/09/2025</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Maria Silva</td>
+                        <td>4500</td>
+                        <td>Portugal</td>
+                        <td>Geografia</td>
+                        <td>18/09/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="inscrever-se">
+            <h2>Assine para o Quebra-cabeça do Dia</h2>
+            <p>Não perca a chance de testar seus conhecimentos diariamente. Assine agora e receba um novo quebra-cabeça todos os dias!</p>
+            <button id="inscrever-btn" aria-label="Inscrever-se no Quebra-cabeça do Dia">Inscrever-se</button>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma sugestão, dúvida ou quer compartilhar uma curiosidade? Envie uma mensagem!</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 World Trivia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
